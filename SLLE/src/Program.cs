@@ -9,8 +9,20 @@ namespace SLLE.src
     /// <summary> Основной класс программы </summary>
     internal class Program: GameWindow
     {
-        // КОНСТАНТЫ
+        // треугольник
+        float[] vertives =
+        {
+            0f, 0.5f, 0f, // верхняя точка
+            -0.5f, -0.5f, 0f, // левая точка
+            0.5f, -0.5f, 0f // правая точка
+        };
 
+        // переменные для рендера
+        int vao;
+        int shaderProgram;
+
+
+        // размеры экрана
         int width, height;
 
         public Program(int width, int height) : base(GameWindowSettings.Default, NativeWindowSettings.Default)
@@ -39,6 +51,19 @@ namespace SLLE.src
         protected override void OnLoad()
         {
             base.OnLoad();
+
+            vao = GL.GenVertexArray(); // Vertex array Object
+
+            // Vertex buffer Object
+            int vbo = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, vbo);
+
+            // Отрисовываем наш треугольник (пока что в буфере) 
+            GL.BufferData(BufferTarget.ArrayBuffer, 
+                vertives.Length * sizeof(float), 
+                vertives, BufferUsageHint.StaticDraw);
+
+            GL.BindBuffer(BufferTarget.ArrayBuffer, 0); // удаляем бинд
         }
 
         /// <summary> Метод вызываемый при выключении программы </summary>
