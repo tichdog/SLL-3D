@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\util\\shadermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:util\\shadermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|c:\\users\\sll\\documents\\git\\slle\\slle\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E009E8D-2038-C5E8-8A39-B51D3BC50497}|SLLE.csproj|solutionrelative:start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Start.cs",
               "DocumentMoniker": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\Start.cs",
               "RelativeDocumentMoniker": "Start.cs",
               "ToolTip": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\Start.cs",
               "RelativeToolTip": "Start.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T10:08:38.304Z",
               "IsPinned": true,
@@ -49,51 +41,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Default.frag",
-              "DocumentMoniker": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\Shaders\\Default.frag",
-              "RelativeDocumentMoniker": "Shaders\\Default.frag",
-              "ToolTip": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\Shaders\\Default.frag",
-              "RelativeToolTip": "Shaders\\Default.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-04-21T08:20:42.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Default.vert",
-              "DocumentMoniker": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\Shaders\\Default.vert",
-              "RelativeDocumentMoniker": "Shaders\\Default.vert",
-              "ToolTip": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\Shaders\\Default.vert",
-              "RelativeToolTip": "Shaders\\Default.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-04-21T08:20:23.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ShaderManager.cs",
               "DocumentMoniker": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\util\\ShaderManager.cs",
               "RelativeDocumentMoniker": "util\\ShaderManager.cs",
               "ToolTip": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\util\\ShaderManager.cs",
               "RelativeToolTip": "util\\ShaderManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T08:10:20.209Z",
+              "WhenOpened": "2026-04-21T12:38:56.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\src\\Program.cs",
               "RelativeDocumentMoniker": "src\\Program.cs",
               "ToolTip": "C:\\Users\\SLL\\Documents\\Git\\SLLE\\SLLE\\src\\Program.cs",
               "RelativeToolTip": "src\\Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAA9wDoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T10:24:37.386Z",
               "EditorCaption": ""

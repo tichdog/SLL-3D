@@ -3,6 +3,7 @@ using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
 using OpenTK.Windowing.GraphicsLibraryFramework;
+using StbImageSharp;
 using SLLE.util;
 
 namespace SLLE.src
@@ -13,14 +14,23 @@ namespace SLLE.src
         // треугольник
         float[] vertives =
         {
-            0f, 0.5f, 0f, // верхняя точка
-            -0.5f, -0.5f, 0f, // левая точка
-            0.5f, -0.5f, 0f // правая точка
+            -0.5f, 0.5f, 0f,
+            0.5f, 0.5f, 0f,
+            0.5f, -0.5f, 0f,
+            -0.5f, -0.5f, 0f,
+        };
+
+        uint[] indeces =
+        {
+            0, 1, 2,
+            2, 3, 0,
         };
 
         // переменные для рендера
         int vao;
+        int vbo;
         int shaderProgram;
+        int ebo;
 
         // размеры экрана
         int width, height;
@@ -52,10 +62,11 @@ namespace SLLE.src
         {
             base.OnLoad();
 
-            vao = GL.GenVertexArray(); // Vertex array Object
+            // Vertex array Object
+            vao = GL.GenVertexArray(); 
 
             // Vertex buffer Object
-            int vbo = GL.GenBuffer();
+            vbo = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ArrayBuffer, vbo);
 
             // Отрисовываем наш треугольник (пока что в буфере) 
@@ -70,6 +81,11 @@ namespace SLLE.src
 
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0); // удаляем бинд
             GL.BindVertexArray(0);
+
+            ebo = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer,ebo);
+            GL.BufferData(BufferTarget.ElementArrayBuffer, indeces.Length*sizeof(uint), indeces, BufferUsageHint.StaticDraw);
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, 0);
 
             // создаём шейдер
             shaderProgram = GL.CreateProgram();
@@ -98,6 +114,8 @@ namespace SLLE.src
             base.OnUnload();
 
             GL.DeleteVertexArray(vao);
+            GL.DeleteProgram(vbo);
+            GL.DeleteBuffer(ebo);
             GL.DeleteProgram(shaderProgram);
         }
 
@@ -111,7 +129,8 @@ namespace SLLE.src
             // рисуем треугольник
             GL.UseProgram(shaderProgram);
             GL.BindVertexArray(vao);
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, ebo);
+            GL.DrawElements(PrimitiveType.Triangles, indeces.Length, DrawElementsType.UnsignedInt,0);
 
             // обновляем буфер окна
             Context.SwapBuffers();

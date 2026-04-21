@@ -12,7 +12,7 @@ namespace SLLE.util
 
             try
             {
-                using (StreamReader reader = new StreamReader("../../../Shaders/" + path))
+                using (StreamReader reader = new StreamReader("../../../shader/" + path))
                 {
                     source = reader.ReadToEnd();
                 }
